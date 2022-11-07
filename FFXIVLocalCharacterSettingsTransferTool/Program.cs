@@ -77,7 +77,8 @@ namespace FFXIVLocalCharacterSettingsTransferTool
             Console.WriteLine("00" + Line2Int.ToString("X"));*/
             //Console.WriteLine(chrPath2);
 
-            Console.WriteLine("Press any key to exit.");
+            Console.WriteLine("");
+            Console.WriteLine("Press any key to exit the tool.");
             Console.ReadKey();
             Environment.Exit(0);
         }

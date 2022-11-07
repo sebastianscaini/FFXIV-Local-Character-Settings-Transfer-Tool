@@ -1,0 +1,14 @@
+C:\Users\Seb\Documents\GitHub\FFXIV-Local-Character-Settings-Transfer-Tool\FFXIVLocalCharacterSettingsTransferTool\bin\Debug\netcoreapp3.1\FFXIVLocalCharacterSettingsTransferTool.exe
+C:\Users\Seb\Documents\GitHub\FFXIV-Local-Character-Settings-Transfer-Tool\FFXIVLocalCharacterSettingsTransferTool\bin\Debug\netcoreapp3.1\FFXIVLocalCharacterSettingsTransferTool.deps.json
+C:\Users\Seb\Documents\GitHub\FFXIV-Local-Character-Settings-Transfer-Tool\FFXIVLocalCharacterSettingsTransferTool\bin\Debug\netcoreapp3.1\FFXIVLocalCharacterSettingsTransferTool.runtimeconfig.json
+C:\Users\Seb\Documents\GitHub\FFXIV-Local-Character-Settings-Transfer-Tool\FFXIVLocalCharacterSettingsTransferTool\bin\Debug\netcoreapp3.1\FFXIVLocalCharacterSettingsTransferTool.runtimeconfig.dev.json
+C:\Users\Seb\Documents\GitHub\FFXIV-Local-Character-Settings-Transfer-Tool\FFXIVLocalCharacterSettingsTransferTool\bin\Debug\netcoreapp3.1\FFXIVLocalCharacterSettingsTransferTool.dll
+C:\Users\Seb\Documents\GitHub\FFXIV-Local-Character-Settings-Transfer-Tool\FFXIVLocalCharacterSettingsTransferTool\bin\Debug\netcoreapp3.1\FFXIVLocalCharacterSettingsTransferTool.pdb
+C:\Users\Seb\Documents\GitHub\FFXIV-Local-Character-Settings-Transfer-Tool\FFXIVLocalCharacterSettingsTransferTool\obj\Debug\netcoreapp3.1\FFXIVLocalCharacterSettingsTransferTool.csproj.AssemblyReference.cache
+C:\Users\Seb\Documents\GitHub\FFXIV-Local-Character-Settings-Transfer-Tool\FFXIVLocalCharacterSettingsTransferTool\obj\Debug\netcoreapp3.1\FFXIVLocalCharacterSettingsTransferTool.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Seb\Documents\GitHub\FFXIV-Local-Character-Settings-Transfer-Tool\FFXIVLocalCharacterSettingsTransferTool\obj\Debug\netcoreapp3.1\FFXIVLocalCharacterSettingsTransferTool.AssemblyInfoInputs.cache
+C:\Users\Seb\Documents\GitHub\FFXIV-Local-Character-Settings-Transfer-Tool\FFXIVLocalCharacterSettingsTransferTool\obj\Debug\netcoreapp3.1\FFXIVLocalCharacterSettingsTransferTool.AssemblyInfo.cs
+C:\Users\Seb\Documents\GitHub\FFXIV-Local-Character-Settings-Transfer-Tool\FFXIVLocalCharacterSettingsTransferTool\obj\Debug\netcoreapp3.1\FFXIVLocalCharacterSettingsTransferTool.csproj.CoreCompileInputs.cache
+C:\Users\Seb\Documents\GitHub\FFXIV-Local-Character-Settings-Transfer-Tool\FFXIVLocalCharacterSettingsTransferTool\obj\Debug\netcoreapp3.1\FFXIVLocalCharacterSettingsTransferTool.dll
+C:\Users\Seb\Documents\GitHub\FFXIV-Local-Character-Settings-Transfer-Tool\FFXIVLocalCharacterSettingsTransferTool\obj\Debug\netcoreapp3.1\FFXIVLocalCharacterSettingsTransferTool.pdb
+C:\Users\Seb\Documents\GitHub\FFXIV-Local-Character-Settings-Transfer-Tool\FFXIVLocalCharacterSettingsTransferTool\obj\Debug\netcoreapp3.1\FFXIVLocalCharacterSettingsTransferTool.genruntimeconfig.cache

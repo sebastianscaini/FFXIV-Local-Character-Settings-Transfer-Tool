@@ -68,7 +68,7 @@ namespace FFXIVLocalCharacterSettingsTransferTool
             {
                 Console.WriteLine("");
                 Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine("Found Chararacter: " + ("CHR" + "00" + Line2Int2.ToString("X") + Line1Int2.ToString("X")));
+                Console.WriteLine("Found Chararacter: " + ("CHR" + "00" + Line2Int2.ToString("X4") + Line1Int2.ToString("X")));
                 Console.ForegroundColor = ConsoleColor.White;
             }
 

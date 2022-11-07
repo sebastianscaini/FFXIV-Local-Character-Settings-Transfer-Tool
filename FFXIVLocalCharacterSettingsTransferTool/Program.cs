@@ -22,7 +22,7 @@ namespace FFXIVLocalCharacterSettingsTransferTool
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("");
             Console.WriteLine("Login with the character that you wish to copy the settings from, then log out and close the game.");
-            Console.WriteLine("Press any key to continue.");
+            Console.WriteLine("Press any key to continue once you have completed this step.");
             Console.ReadKey();
 
             FFXIVDataPath = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "/My Games/FINAL FANTASY XIV - A Realm Reborn", "FFXIV.cfg");
@@ -44,10 +44,7 @@ namespace FFXIVLocalCharacterSettingsTransferTool
 
             Console.WriteLine("");
             Console.WriteLine("Login with the character that you wish to copy the settings to, then log out and close the game.");
-            Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine("If you wish to copy these settings to all other character, continue without logging in to another character.");
-            Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine("Press any key to continue.");
+            Console.WriteLine("Press any key to continue once you have completed this step.");
             Console.ReadKey();
 
             FFXIVDataPath = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "/My Games/FINAL FANTASY XIV - A Realm Reborn", "FFXIV.cfg");
@@ -66,13 +63,9 @@ namespace FFXIVLocalCharacterSettingsTransferTool
 
             if (chrPath == chrPath2)
             {
-                Console.WriteLine("");
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("The tool is about to overwrite all of your character settings with the selected character's settings.");
-                Console.WriteLine("Press any key twice to confirm. Close the tool to cancel.");
+                Console.WriteLine("The same character is selected. Aborting copy.");
                 Console.ForegroundColor = ConsoleColor.White;
-                Console.ReadKey();
-                Console.ReadKey();
             }
             else
             {

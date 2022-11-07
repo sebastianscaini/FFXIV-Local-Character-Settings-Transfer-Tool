@@ -70,6 +70,11 @@ namespace FFXIVLocalCharacterSettingsTransferTool
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine("Found Chararacter: " + ("CHR" + "00" + Line2Int2.ToString("X4") + Line1Int2.ToString("X")));
                 Console.ForegroundColor = ConsoleColor.White;
+
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("The tool is about to overwrite the target character's settings.");
+                Console.WriteLine("Press any key twice to confirm. Close the tool to cancel.");
+                Console.ForegroundColor = ConsoleColor.White;
             }
 
             //Console.WriteLine("");

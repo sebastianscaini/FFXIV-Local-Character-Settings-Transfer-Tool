@@ -11,3 +11,4 @@ C:\Users\Seb\Documents\GitHub\FFXIV-Local-Character-Settings-Transfer-Tool\FFXIV
 C:\Users\Seb\Documents\GitHub\FFXIV-Local-Character-Settings-Transfer-Tool\FFXIVCheckLastUsedCharacter\obj\Release\netcoreapp3.1\FFXIVCheckLastUsedCharacter.dll
 C:\Users\Seb\Documents\GitHub\FFXIV-Local-Character-Settings-Transfer-Tool\FFXIVCheckLastUsedCharacter\obj\Release\netcoreapp3.1\FFXIVCheckLastUsedCharacter.pdb
 C:\Users\Seb\Documents\GitHub\FFXIV-Local-Character-Settings-Transfer-Tool\FFXIVCheckLastUsedCharacter\obj\Release\netcoreapp3.1\FFXIVCheckLastUsedCharacter.genruntimeconfig.cache
+C:\Users\Seb\Documents\GitHub\FFXIV-Local-Character-Settings-Transfer-Tool\FFXIVCheckLastUsedCharacter\obj\Release\netcoreapp3.1\FFXIVCheckLastUsedCharacter.csproj.AssemblyReference.cache

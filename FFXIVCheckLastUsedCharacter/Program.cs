@@ -21,7 +21,7 @@ namespace FFXIVCheckLastUsedCharacter
             string chrPath = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "/My Games/FINAL FANTASY XIV - A Realm Reborn/" + ("CHR" + Line1Int.ToString("X") + "00" + Line2Int.ToString("X")));
             Console.WriteLine("");
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine("Last Used Character Data: " + ("CHR" + Line1Int.ToString("X") + "00" + Line2Int.ToString("X")));
+            Console.WriteLine("Last Used Character Data: " + ("CHR" + "00" + Line2Int.ToString("X") + Line1Int.ToString("X")));
             Console.ForegroundColor = ConsoleColor.White;
 
             Console.WriteLine("Press any key to exit.");

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 
 namespace FFXIVLocalCharacterSettingsTransferTool
 {
@@ -6,7 +7,7 @@ namespace FFXIVLocalCharacterSettingsTransferTool
     {
         static void Main(string[] args)
         {
-            string FFXIVDataPath = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "/My Games/FINAL FANTASY XIV - A Realm Reborn", "FFXIV.cfg");
+            string FFXIVDataPath = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\My Games\FINAL FANTASY XIV - A Realm Reborn", "FFXIV.cfg");
             string[] FFXIVData = System.IO.File.ReadAllLines(FFXIVDataPath);
             string fileName = "";
 
@@ -17,7 +18,7 @@ namespace FFXIVLocalCharacterSettingsTransferTool
             Console.WriteLine("");
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("It is strongly recommended that you make a backup of the folder: ");
-            Console.WriteLine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "/My Games/FINAL FANTASY XIV - A Realm Reborn");
+            Console.WriteLine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\My Games\FINAL FANTASY XIV - A Realm Reborn");
             Console.WriteLine("before using this tool!");
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("");
@@ -25,7 +26,7 @@ namespace FFXIVLocalCharacterSettingsTransferTool
             Console.WriteLine("Press any key to continue once you have completed this step.");
             Console.ReadKey();
 
-            FFXIVDataPath = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "/My Games/FINAL FANTASY XIV - A Realm Reborn", "FFXIV.cfg");
+            FFXIVDataPath = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\My Games\FINAL FANTASY XIV - A Realm Reborn", "FFXIV.cfg");
             FFXIVData = System.IO.File.ReadAllLines(FFXIVDataPath);
 
             string Line1 = FFXIVData[12].Replace("LastLogin0	", "");
@@ -34,8 +35,10 @@ namespace FFXIVLocalCharacterSettingsTransferTool
             int Line1Int = int.Parse(Line1);
             int Line2Int = int.Parse(Line2);
 
-            string chrPath = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "/My Games/FINAL FANTASY XIV - A Realm Reborn/" + ("FFXIV_CHR" + "00" + Line2Int.ToString("X") + Line1Int.ToString("X")));
-            string sourcePath = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "/My Games/FINAL FANTASY XIV - A Realm Reborn/" + ("FFXIV_CHR" + "00" + Line2Int.ToString("X") + Line1Int.ToString("X")));
+            string chrPath = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\My Games\FINAL FANTASY XIV - A Realm Reborn\" + ("FFXIV_CHR" + "00" + Line2Int.ToString("X") + Line1Int.ToString("X")));
+            string sourcePath = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\My Games\FINAL FANTASY XIV - A Realm Reborn\" + ("FFXIV_CHR" + "00" + Line2Int.ToString("X") + Line1Int.ToString("X")));
+
+            //Process.Start("explorer.exe", chrPath);
 
             Console.WriteLine("");
             Console.ForegroundColor = ConsoleColor.Green;
@@ -47,7 +50,7 @@ namespace FFXIVLocalCharacterSettingsTransferTool
             Console.WriteLine("Press any key to continue once you have completed this step.");
             Console.ReadKey();
 
-            FFXIVDataPath = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "/My Games/FINAL FANTASY XIV - A Realm Reborn", "FFXIV.cfg");
+            FFXIVDataPath = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\My Games\FINAL FANTASY XIV - A Realm Reborn", "FFXIV.cfg");
             FFXIVData = System.IO.File.ReadAllLines(FFXIVDataPath);
 
             string Line12 = FFXIVData[12].Replace("LastLogin0	", "");
@@ -55,8 +58,8 @@ namespace FFXIVLocalCharacterSettingsTransferTool
             int Line1Int2 = int.Parse(Line12);
             int Line2Int2 = int.Parse(Line22);
 
-            string chrPath2 = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "/My Games/FINAL FANTASY XIV - A Realm Reborn/" + ("FFXIV_CHR" + "00" + Line2Int2.ToString("X")+ Line1Int2.ToString("X")));
-            string targetPath = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + "/My Games/FINAL FANTASY XIV - A Realm Reborn/" + ("FFXIV_CHR" + "00" + Line2Int2.ToString("X")+ Line1Int2.ToString("X")));
+            string chrPath2 = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\My Games\FINAL FANTASY XIV - A Realm Reborn\" + ("FFXIV_CHR" + "00" + Line2Int2.ToString("X")+ Line1Int2.ToString("X")));
+            string targetPath = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\My Games\FINAL FANTASY XIV - A Realm Reborn\" + ("FFXIV_CHR" + "00" + Line2Int2.ToString("X")+ Line1Int2.ToString("X")));
 
             string sourceFile = System.IO.Path.Combine(sourcePath, fileName);
             string destFile = System.IO.Path.Combine(targetPath, fileName);

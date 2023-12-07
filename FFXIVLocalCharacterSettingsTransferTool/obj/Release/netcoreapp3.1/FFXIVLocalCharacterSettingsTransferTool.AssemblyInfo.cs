@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FFXIVLocalCharacterSettingsTransferTool")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e802ee604e05e961b726449085e0ff24e3c3b90f")]
 [assembly: System.Reflection.AssemblyProductAttribute("FFXIVLocalCharacterSettingsTransferTool")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FFXIVLocalCharacterSettingsTransferTool")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

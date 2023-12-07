@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "Q6ZbB7uRL0dzWk07ssP5kWz+8XXf8umWFsRv2XriICpDd8E1wyriMt4QbX67t0uDhht9RULjkuguSbaVgD0A9A==",
+  "dgSpecHash": "nCTYojYKOm2bb0wUsCXueFOstNXkNmg+QK7KKJk0lOrtmVwAtFZTKeRGvEwUiSXtNg1MD0zcNCVNeH0OlfbMWQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Seb\\Documents\\GitHub\\FFXIV-Local-Character-Settings-Transfer-Tool\\FFXIVLocalCharacterSettingsTransferTool\\FFXIVLocalCharacterSettingsTransferTool.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\sebro\\Documents\\GitHub\\FFXIV-Local-Character-Settings-Transfer-Tool\\FFXIVLocalCharacterSettingsTransferTool\\FFXIVLocalCharacterSettingsTransferTool.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\sebro\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\sebro\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\sebro\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\sebro\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.32\\microsoft.netcore.app.host.win-x64.3.1.32.nupkg.sha512"
+  ],
   "logs": []
 }

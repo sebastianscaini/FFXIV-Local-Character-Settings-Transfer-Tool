@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sebro\\Documents\\GitHub\\FFXIV-Local-Character-Settings-Transfer-Tool\\FFXIVLocalCharacterSettingsTransferTool\\FFXIVLocalCharacterSettingsTransferTool.csproj",
+      "projectUniqueName": "C:\\Users\\sebro\\Documents\\GitHub\\FFXIV-Local-Character-Settings-Transfer-Tool\\Old\\FFXIVLocalCharacterSettingsTransferTool\\FFXIVLocalCharacterSettingsTransferTool.csproj",
       "projectName": "FFXIVLocalCharacterSettingsTransferTool",
-      "projectPath": "C:\\Users\\sebro\\Documents\\GitHub\\FFXIV-Local-Character-Settings-Transfer-Tool\\FFXIVLocalCharacterSettingsTransferTool\\FFXIVLocalCharacterSettingsTransferTool.csproj",
+      "projectPath": "C:\\Users\\sebro\\Documents\\GitHub\\FFXIV-Local-Character-Settings-Transfer-Tool\\Old\\FFXIVLocalCharacterSettingsTransferTool\\FFXIVLocalCharacterSettingsTransferTool.csproj",
       "packagesPath": "C:\\Users\\sebro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sebro\\Documents\\GitHub\\FFXIV-Local-Character-Settings-Transfer-Tool\\FFXIVLocalCharacterSettingsTransferTool\\obj\\",
+      "outputPath": "C:\\Users\\sebro\\Documents\\GitHub\\FFXIV-Local-Character-Settings-Transfer-Tool\\Old\\FFXIVLocalCharacterSettingsTransferTool\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

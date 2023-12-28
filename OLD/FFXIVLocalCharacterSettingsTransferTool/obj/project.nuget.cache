@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nCTYojYKOm2bb0wUsCXueFOstNXkNmg+QK7KKJk0lOrtmVwAtFZTKeRGvEwUiSXtNg1MD0zcNCVNeH0OlfbMWQ==",
+  "dgSpecHash": "FpvQIF14OGYPur9KuvbAym8OnqrUlQY9Y9iglTLNyU0b8uXqBbfVLncLxO+MDz9WK+9tYmFRQ+mdb87JJ32fdw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sebro\\Documents\\GitHub\\FFXIV-Local-Character-Settings-Transfer-Tool\\FFXIVLocalCharacterSettingsTransferTool\\FFXIVLocalCharacterSettingsTransferTool.csproj",
+  "projectFilePath": "C:\\Users\\sebro\\Documents\\GitHub\\FFXIV-Local-Character-Settings-Transfer-Tool\\Old\\FFXIVLocalCharacterSettingsTransferTool\\FFXIVLocalCharacterSettingsTransferTool.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sebro\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
     "C:\\Users\\sebro\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",

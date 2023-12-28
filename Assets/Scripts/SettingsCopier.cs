@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Diagnostics;
-
+using TMPro;
 public class SettingsCopier : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public TextMeshPro dialogueText;
+
     void Start()
     {
         StartCoroutine(CopySettings());
@@ -17,24 +18,33 @@ public class SettingsCopier : MonoBehaviour
         string[] FFXIVData = System.IO.File.ReadAllLines(FFXIVDataPath);
         string fileName = "";
 
-        UnityEngine.Debug.Log("FFXIV Local Character Settings Transfer Tool");
-        UnityEngine.Debug.Log("By Sebastian Scaini");
-        UnityEngine.Debug.Log("");
-        UnityEngine.Debug.Log("This tool will help you transfer your character settings from one character to another locally!");
-        UnityEngine.Debug.Log("");
-
-        UnityEngine.Debug.Log("It is strongly recommended that you make a backup of the folder: ");
-        UnityEngine.Debug.Log(System.Environment.GetFolderPath(System.Environment.SpecialFolder.MyDocuments) + @"\My Games\FINAL FANTASY XIV - A Realm Reborn");
-        UnityEngine.Debug.Log("before using this tool!");
-
-        UnityEngine.Debug.Log("");
-        UnityEngine.Debug.Log("Login with the character that you wish to copy the settings from, then log out and close the game.");
-        UnityEngine.Debug.Log("Press any key to continue once you have completed this step.");
-
+        DisplayText("Welcome to FFXIV Local Character Settings Copy Tool!");
         while (!Input.anyKeyDown)
         {
             yield return null;
         }
+        yield return new WaitForSeconds(0.1f);
+
+        DisplayText("I strongly recommend backing up: " + System.Environment.GetFolderPath(System.Environment.SpecialFolder.MyDocuments) + @"\My Games\FINAL FANTASY XIV - A Realm Reborn" + " before using this tool!");
+        while (!Input.anyKeyDown)
+        {
+            yield return null;
+        }
+        yield return new WaitForSeconds(0.1f);
+
+        DisplayText("Let's get started!");
+        while (!Input.anyKeyDown)
+        {
+            yield return null;
+        }
+        yield return new WaitForSeconds(0.1f);
+
+        DisplayText("Login with the character that you wish to copy the settings from, then log out and close the game. Progress to the next dialogue once you have done so!");
+        while (!Input.anyKeyDown)
+        {
+            yield return null;
+        }
+        yield return new WaitForSeconds(0.1f);
 
         FFXIVDataPath = System.IO.Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.MyDocuments) + @"\My Games\FINAL FANTASY XIV - A Realm Reborn", "FFXIV.cfg");
         FFXIVData = System.IO.File.ReadAllLines(FFXIVDataPath);
@@ -48,18 +58,18 @@ public class SettingsCopier : MonoBehaviour
         string chrPath = System.IO.Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.MyDocuments) + @"\My Games\FINAL FANTASY XIV - A Realm Reborn\" + ("FFXIV_CHR" + "00" + Line2Int.ToString("X") + Line1Int.ToString("X")));
         string sourcePath = System.IO.Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.MyDocuments) + @"\My Games\FINAL FANTASY XIV - A Realm Reborn\" + ("FFXIV_CHR" + "00" + Line2Int.ToString("X") + Line1Int.ToString("X")));
 
-        UnityEngine.Debug.Log("");
-
-        UnityEngine.Debug.Log("Found Chararacter: " + ("CHR" + "00" + Line2Int.ToString("X") + Line1Int.ToString("X")));
-
-        UnityEngine.Debug.Log("");
-        UnityEngine.Debug.Log("Login with the character that you wish to copy the settings to, then log out and close the game.");
-        UnityEngine.Debug.Log("Press any key to continue once you have completed this step.");
-        
+        DisplayText("I found the character: " + ("CHR" + "00" + Line2Int.ToString("X") + Line1Int.ToString("X")));
         while (!Input.anyKeyDown)
         {
             yield return null;
         }
+        yield return new WaitForSeconds(0.1f);
+        DisplayText("Now login with the new character that you wish to copy the settings to, then log out and close the game. Progress to the next dialogue once you have done so!");
+        while (!Input.anyKeyDown)
+        {
+            yield return null;
+        }
+        yield return new WaitForSeconds(0.1f);
 
         FFXIVDataPath = System.IO.Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.MyDocuments) + @"\My Games\FINAL FANTASY XIV - A Realm Reborn", "FFXIV.cfg");
         FFXIVData = System.IO.File.ReadAllLines(FFXIVDataPath);
@@ -77,26 +87,35 @@ public class SettingsCopier : MonoBehaviour
 
         if (chrPath == chrPath2)
         {
-            UnityEngine.Debug.Log("The same character is selected. Aborting copy.");
+            DisplayText("Oh no! It looks like the same character is selected. I'm stopping the copying process, please reopen the tool to try again!");
+            while (!Input.anyKeyDown)
+            {
+                yield return null;
+            }
+            yield return new WaitForSeconds(0.1f);
         }
         else
         {
             UnityEngine.Debug.Log("");
-            UnityEngine.Debug.Log("Found Chararacter: " + ("CHR" + "00" + Line2Int2.ToString("X4") + Line1Int2.ToString("X")));
+            DisplayText("I found the character: " + ("CHR" + "00" + Line2Int2.ToString("X4") + Line1Int2.ToString("X")));
+            while (!Input.anyKeyDown)
+            {
+                yield return null;
+            }
+            yield return new WaitForSeconds(0.1f);
 
-            UnityEngine.Debug.Log("The tool is about to overwrite the target character's settings.");
-            UnityEngine.Debug.Log("Press any key twice to confirm. Close the tool to cancel.");
-
+            DisplayText("The tool is about to overwrite the target character's settings. Press any key twice to confirm. Close the tool to cancel.");
+            while (!Input.anyKeyDown)
+            {
+                yield return null;
+            }
+            yield return new WaitForSeconds(0.1f); 
             
             while (!Input.anyKeyDown)
             {
                 yield return null;
             }
-
-            while (!Input.anyKeyDown)
-            {
-                yield return null;
-            }
+            yield return new WaitForSeconds(0.1f);
 
             if (System.IO.Directory.Exists(sourcePath))
             {
@@ -110,23 +129,36 @@ public class SettingsCopier : MonoBehaviour
                     UnityEngine.Debug.Log("Copied " + s);
                 }
 
-                UnityEngine.Debug.Log("");
-                UnityEngine.Debug.Log("Copying complete!");
+                DisplayText("The copying completed successfully!");
+                while (!Input.anyKeyDown)
+                {
+                    yield return null;
+                }
+                yield return new WaitForSeconds(0.1f);
+
+                DisplayText("That's it for me, see you soon!");
+                while (!Input.anyKeyDown)
+                {
+                    yield return null;
+                }
+                yield return new WaitForSeconds(0.1f);
             }
             else
             {
-                UnityEngine.Debug.Log("Target invalid. Aborting copy.");
+                DisplayText("Oh no something went wrong with the copying process. Aborting the copy!");
+                while (!Input.anyKeyDown)
+                {
+                    yield return null;
+                }
+                yield return new WaitForSeconds(0.1f);
             }
         }
 
-        UnityEngine.Debug.Log("");
-        UnityEngine.Debug.Log("Press any key to exit the tool.");
-
-        while (!Input.anyKeyDown)
-        {
-            yield return null;
-        }
-
         Application.Quit();
+    }
+
+    private void DisplayText(string dialogue)
+    {
+        dialogueText.text = dialogue;
     }
 }

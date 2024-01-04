@@ -195,7 +195,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ffxiv-endwalker-grapes-meme_0: -3315584213949751817
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
